@@ -104,15 +104,35 @@ body {
 .hero {
   position: relative;
   min-height: 85vh;
-   background: linear-gradient(
-    135deg,
-    #ff4d2d 0%,
-    #ff3c5f 35%,
-    #e92b6a 65%,
-    #c81d77 100%
-  );
-  background-size: 200% 200%;
-  animation: gradientFlow 12s ease infinite;
+background: linear-gradient(
+  135deg,
+  #ffd6cc 0%,
+  #ffcec7 4%,
+  #ffc6c2 8%,
+  #ffbebb 12%,
+  #ffb6b4 16%,
+  #ffafae 20%,
+  #ffa7a8 24%,
+  #ffa0a3 28%,
+  #ff989f 32%,
+  #f9919c 36%,
+  #f28a99 40%,
+  #eb8397 44%,
+  #e47c95 48%,
+  #dd7593 52%,
+  #d66e91 56%,
+  #cf678f 60%,
+  #c8608d 64%,
+  #c1598b 68%,
+  #ba5289 72%,
+  #b34b87 76%,
+  #ac4485 80%,
+  #a53d83 84%,
+  #9e3681 92%,
+  #972f7f 100%
+);
+  background-size: 400% 400%;
+  animation: gradientFlow 5s linear infinite;
   display: flex;
   align-items: flex-end;
   padding: 40px;
@@ -195,6 +215,7 @@ body {
   font-size: 15px;
   font-weight: 500;
   transition: transform .15s ease, box-shadow .15s ease;
+  
 }
 
 .btn:hover {
@@ -243,12 +264,24 @@ body {
   transform: translateY(-6px);
 }
 
+
+
 .icon {
-  width: 64px;
+  position: relative;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent) 20%, transparent),
+    transparent 70%
+  );
+    width: 64px;
   height: 64px;
-  background: #000000;
-  margin: auto;
+    margin: auto;
   border-radius: 14px;
+}
+
+.card:hover .icon {
+  animation: iconPulse 1.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 14px var(--accent));
 }
 
 .shimmer {
@@ -444,5 +477,29 @@ body {
   .btn {
     font-size: 18px;
     padding: 16px 40px;
+  }
+}
+
+@keyframes iconPulse {
+  0% {
+    background: radial-gradient(
+      circle,
+      color-mix(in srgb, var(--accent) 18%, transparent),
+      transparent 65%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle,
+      color-mix(in srgb, var(--accent) 35%, transparent),
+      transparent 75%
+    );
+  }
+  100% {
+    background: radial-gradient(
+      circle,
+      color-mix(in srgb, var(--accent) 18%, transparent),
+      transparent 100%
+    );
   }
 }
