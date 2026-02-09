@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TamBalet App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="lang-en">
+  <main class="page">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">TumblersApp</div>
+      <nav class="nav">
+        <a href="#about">Home</a>
+        <a href="#apps">About</a>
+        <a href="#join">Application</a>
+        <a href="#join">Contact</a>
+      </nav>
+      <!-- <div class="lang">
+        <button onclick="switchLang('en')">EN</button>
+        <button onclick="switchLang('ru')">RU</button> -->
+      </div>
+    </header>
+
+    <div id="cursor">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
+  <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52z"/>
+</svg>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1
+            data-ru="Думаешь, банк предупредит о выходе своего приложения?">
+          Думаешь, банк предупредит о выходе своего приложения?
+        </h1>
+        <p
+           data-ru="Нет. Но мы узнаем это первыми. Следи за релизами — раньше, чем они попадут в новости.">
+          Нет. Но мы узнаем это первыми. Следи за релизами — раньше, чем они попадут в новости.
+        </p>
+        <a href="#join" class="btn">Join Telegram</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h2  data-ru="О проекте">About the project</h2>
+      <p 
+         data-ru="TumblersApp отслеживает тихие релизы и возвращения банковских приложений до официальных заявлений.">
+        TumblersApp App отслеживает тихие релизы и возвращения банковских приложений до официальных заявлений.
+      </p>
+      <div class="stats">
+        <div><strong>11+ </strong><span data-ru="Найдено приложений">Найдено приложений</span></div>
+        <div><strong>5 минут </strong><span data-ru="Интервал сканирования">Интервал сканирования</span></div>
+        <div><strong>100% </strong><span data-ru="Ручная проверка">Ручная проверка</span></div>
+        <div><strong>24/7 </strong><span data-ru="Мониторинг">Мониторинг</span></div>
+      </div>
+    </section>
+
+    <!-- APPS -->
+    <section id="apps" class="apps">
+      <h2>Recently spotted</h2>
+      <div class="cards">
+        <article class="card" style="--accent:#2ecc71">
+          <img src="img/bank1.png" alt="BankName Logo" class="icon" />
+          <h3>Сбербанк</h3>
+          <a href="https://www.sberbank.ru/ru/person/dist_services/sberbank-online" class="btn">Сайт</a>
+        </article>
+        <article class="card" style="--accent:#2ecc71">
+          <img src="img/SberEapteka.png" alt="BankName Logo" class="icon" />
+          <h3>Сбер Еаптека</h3>
+          <a href="https://apps.apple.com/ru/app/%D0%B5%D0%B0%D0%BF%D1%82%D0%B5%D1%87%D0%BA%D0%B0/id6745974640" class="btn">AppStore</a>
+        </article>
+        <article class="card" style="--accent:#2ecc71">
+          <img src="img/SberDisk.png" alt="BankName Logo" class="icon" />
+          <h3>Сбер Диск</h3>
+          <a href="https://apps.apple.com/ru/app/%D0%B4%D0%B8%D1%81%D0%BA-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B2%D0%B0%D1%88%D0%B8%D1%85-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2/id6739949076" class="btn">AppStore</a>
+        </article>
+        <article class="card" style="--accent:#ff3c5f">
+          <img src="img/bank2.png" alt="FinCorp Logo" class="icon" />
+          <h3>Альфа банк</h3>
+          <a href="https://alfabank.ru/help/t/retail/debitcards/mobilnoe-prilozhenie-i-alfa-onlain/72-mobilnoe-prilozhenie-i-alfa-onlain/5087-kak-ustanovit-mobilnoe-prilozhenie/" class="btn">Сайт</a>
+        </article>
+        <article class="card" style="--accent:#ff3c5f">
+          <img src="img/bank2.1.png" alt="FinCorp Logo" class="icon" />
+          <h3>Альфа бизнес</h3>
+          <a href="https://apps.apple.com/ru/app/%D0%BA%D1%83%D1%80%D1%81-%D0%BD%D0%B0-%D0%B4%D0%B5%D0%BB%D0%BE/id6744524077" class="btn">AppStore</a>
+        </article>
+        <article class="card" style="--accent:#ffd400">
+          <img src="img/bank3.png" alt="CryptoX Logo" class="icon" />
+          <h3>T-Bank</h3>
+          <a href="https://a.t-bnk.ru/s/eiQKfxVggB" class="btn">Testflight</a>
+        </article>
+        <article class="card" style="--accent:#ff8a3d">
+          <img src="img/bank4.png" alt="CryptoX Logo" class="icon" />
+          <h3>МКБ</h3>
+          <a href="https://testflight.apple.com/join/ae786kAN" class="btn">Testflight</a>
+        </article>
+        <article class="card" style="--accent:#1e6bff">
+          <img src="img/VTBBusiness.png" alt="CryptoX Logo" class="icon" />
+          <h3>ВТБ бизнес</h3>
+          <a href="https://apps.apple.com/ru/app/motivaro/id6755754616" class="btn">AppStore</a>
+        </article>
+        <article class="card" style="--accent:#1e6bff">
+          <img src="img/VTBInvest.png" alt="CryptoX Logo" class="icon" />
+          <h3>ВТБ инвестиции</h3>
+          <a href="https://apps.apple.com/ru/app/artemida/id6755385973" class="btn">AppStore</a>
+        </article>
+        <article class="card" style="--accent:#3f6cff">
+          <img src="img/PSBBusiness.png" alt="CryptoX Logo" class="icon" />
+          <h3>ПСБ бизнес</h3>
+          <a href="https://apps.apple.com/ru/app/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/id6758045372" class="btn">AppStore</a>
+        </article>
+        <article class="card" style="--accent:#8fa1b3">
+          <img src="img/bank7.png" alt="CryptoX Logo" class="icon" />
+          <h3>Газпромбанк</h3>
+          <a href="https://www.gazprombank.ru/personal/page/app/" class="btn">Сайт</a>
+        </article>
+        <article class="card" style="--accent:#e84545">
+          <img src="img/bank8.png" alt="CryptoX Logo" class="icon" />
+          <h3>Совкомбанк</h3>
+          <a href="https://pwa.sovcombank.ru" class="btn">Сайт</a>
+        </article>
+        <article class="card" style="--accent:#ff7a3c">
+          <img src="img/bank9.png" alt="CryptoX Logo" class="icon" />
+          <h3>Рокет</h3>
+          <a href="https://rocketbank.ru" class="btn">Сайт</a>
+        </article>
+        <article class="card" style="--accent:#3fa34d">
+          <img src="img/RSXB.png" alt="CryptoX Logo" class="icon" />
+          <h3>РСХБ</h3>
+          <a href="https://apps.apple.com/ru/app/%D0%B0%D0%B3%D1%80%D0%BE%D1%81%D0%BA%D0%B0%D0%BD/id6756363114" class="btn">AppStore</a>
+        </article>
+        </article>
+        <article class="card" style="--accent:#8b5cf6">
+          <img src="img/bank11.png" alt="CryptoX Logo" class="icon" />
+          <h3>Точка</h3>
+          <a href="https://tochka.com/rko/app/" class="btn">Сайт</a>
+        </article>
+        <article class="card" style="--accent:#8b5cf6">
+          <img src="img/bank12.png" alt="CryptoX Logo" class="icon" />
+          <h3>Сургутнефтебанк</h3>
+          <a href="https://apps.apple.com/ru/app/bng/id6744011402" class="btn">TestFlight</a>
+        </article>
+        <article class="card" style="--accent:#8b5cf6">
+          <img src="img/S7Airlines.png" alt="CryptoX Logo" class="icon" />
+          <h3>S7 Airlines</h3>
+          <a href="https://apps.apple.com/ru/app/%D1%83%D0%B7%D0%BD%D0%B0%D0%B9-%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%8C/id6755426632" class="btn">AppStore</a>
+        </article>
+        <article class="card" style="--accent:#8b5cf6">
+          <img src="img/HomeTochaRU.png" alt="CryptoX Logo" class="icon" />
+          <h3>Дом.ру</h3>
+          <a href="https://apps.apple.com/ru/app/%D0%BF%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C/id6754636283" class="btn">AppStore</a>
+        </article>
+        <article class="card" style="--accent:#8b5cf6">
+          <img src="img/VatscVestnik.png" alt="CryptoX Logo" class="icon" />
+          <h3>Хлынов банк</h3>
+          <a href="https://testflight.apple.com/join/NTBxR5zf" class="btn">TestFlight</a>
+        </article>
+        <article class="card" style="--accent:#8b5cf6">
+          <img src="img/VatscVestnik.png" alt="CryptoX Logo" class="icon" />
+          <h3>Уралсиб банк</h3>
+          <a href="https://testflight.apple.com/join/KWaC6fUB" class="btn">TestFlight</a>
+        </article>
+        <article class="card" style="--accent:#8b5cf6">
+          <img src="img/RJD.png" alt="CryptoX Logo" class="icon" />
+          <h3>РЖД</h3>
+          <a href="https://testflight.apple.com/join/njphuYqZ" class="btn">TestFlight</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join" class="join">
+      <h2  data-ru="Будь первым">Stay ahead</h2>
+      <p 
+         data-ru="Telegram — наш основной канал. Только реальные сигналы.">
+        Telegram — наш основной канал. Только реальные сигналы.
+      </p>
+      <button onclick="openTelegram()">Open Telegram</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      © 2026 TumblersApp · +7 (995) 301 49-65 · @goryaschevGV · @TumblersApp
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
