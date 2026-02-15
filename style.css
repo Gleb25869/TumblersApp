@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-  background-color: #000000;
+  background-color: #fffcfc;
 }
 
 .page {
@@ -105,6 +105,10 @@ background: linear-gradient(
   align-items: flex-end;
   padding: 40px;
   border-radius: 50px;
+}
+
+.icon{
+  border-radius: 99%;
 }
 
 .card {
