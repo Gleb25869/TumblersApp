@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-  background-color: #fffcfc;
+  background-color: #fcfcff;
 }
 
 .page {
@@ -274,6 +274,8 @@ background: linear-gradient(
   animation: shimmer 1.2s infinite;
 }
 
+
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -486,4 +488,10 @@ background: linear-gradient(
       transparent 100%
     );
   }
+}
+
+@keyframes floatImage {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
 }
