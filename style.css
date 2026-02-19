@@ -158,6 +158,8 @@ background: linear-gradient(
   z-index: -1;
 }
 
+
+
 .card:hover::after {
   opacity: 0.25;
 }
@@ -273,6 +275,7 @@ background: linear-gradient(
   background-size: 200% 100%;
   animation: shimmer 1.2s infinite;
 }
+
 
 
 
@@ -494,4 +497,20 @@ background: linear-gradient(
   0% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0px); }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 1.25rem;
+  }
 }
